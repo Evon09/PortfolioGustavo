@@ -8,12 +8,11 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 
-import Eu from "../../assets/img/Eu.jpeg";
-
 import string from "../../assets/json/about.json";
 
 export function CardAbout() {
   const { toggleColorMode, colorMode } = useColorMode();
+  const imagem = require(`../../assets/img/about/${string.Imagen}`);
 
   return (
     <Stack
@@ -44,7 +43,7 @@ export function CardAbout() {
           <Image
             objectFit="cover"
             maxW={{ base: "100%", sm: "30vw" }}
-            src={Eu}
+            src={imagem}
             alt="Gustavo"
             borderRadius="24px"
             position={{ base: "relative", sm: "absolute" }}
