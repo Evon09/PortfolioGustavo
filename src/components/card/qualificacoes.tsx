@@ -1,22 +1,14 @@
-import {
-  Image,
-  Text,
-  Stack,
-  VStack,
-  Flex,
-  Card,
-  Icon,
-  useColorMode,
-} from "@chakra-ui/react";
+import { Text, Flex, useColorMode } from "@chakra-ui/react";
 import { Qualificacao } from "./qualificacao";
 
 import string from "../../assets/json/qualificacoes.json";
 
 export function Qualificacoes() {
-  const { toggleColorMode, colorMode } = useColorMode();
+  const { colorMode } = useColorMode();
   const cardsKeys = Object.keys(string.Cards);
   return (
     <Flex
+      id="quali"
       w="100%"
       minH="80vh"
       bg={colorMode === "light" ? "light.secondary" : "dark.secondary"}

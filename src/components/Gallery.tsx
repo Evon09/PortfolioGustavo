@@ -21,7 +21,7 @@ const Gallery: React.FC = () => {
   }>({});
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
-  const { toggleColorMode, colorMode } = useColorMode();
+  const { colorMode } = useColorMode();
 
   useEffect(() => {
     const importPhotos = async () => {
@@ -60,6 +60,7 @@ const Gallery: React.FC = () => {
 
   return (
     <Flex
+      id="gale"
       paddingRight="10vw"
       paddingLeft="10vw"
       w="100%"

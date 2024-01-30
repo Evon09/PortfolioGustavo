@@ -5,18 +5,18 @@ import {
   VStack,
   Flex,
   useColorMode,
-  useColorModeValue,
 } from "@chakra-ui/react";
 
 import string from "../../assets/json/about.json";
 
 export function CardAbout() {
-  const { toggleColorMode, colorMode } = useColorMode();
+  const { colorMode } = useColorMode();
   const imagem = require(`../../assets/img/about/${string.Imagen}`);
 
   return (
     <Stack
       w="100%"
+      id="about"
       paddingRight="10vw"
       paddingLeft="10vw"
       paddingTop={{ base: "10px", sm: "0px" }}

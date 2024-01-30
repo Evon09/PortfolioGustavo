@@ -3,10 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./view/Home";
 import NotFound from "./view/NotFound";
 
-interface PrivateProps {
-  Item: React.ComponentType;
-}
-
 const AppRouter = () => {
   return (
     <Fragment>

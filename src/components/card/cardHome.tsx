@@ -10,10 +10,11 @@ import {
 import string from "../../assets/json/home.json";
 
 export function CardHome() {
-  const { toggleColorMode, colorMode } = useColorMode();
+  const { colorMode } = useColorMode();
   const imagem = require(`../../assets/img/home/${string.Imagen}`);
   return (
     <Stack
+      id="homes"
       w="100%"
       paddingRight="10vw"
       paddingLeft="10vw"

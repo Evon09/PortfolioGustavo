@@ -1,12 +1,9 @@
 import {
   VStack,
-  HStack,
   Tabs,
-  TabList,
   Tab,
   TabPanels,
   TabPanel,
-  Heading,
   Text,
   Flex,
   useColorMode,
@@ -16,10 +13,11 @@ import {
 import string from "../../assets/json/experiencias.json";
 
 export function Experiencias() {
-  const { toggleColorMode, colorMode } = useColorMode();
+  const { colorMode } = useColorMode();
   const experiencia = Object.keys(string.Experiencias);
   return (
     <VStack
+      id="exp"
       w="100%"
       px="10vw"
       py={{ base: "10px", sm: "30px" }}

@@ -2,10 +2,7 @@ import {
   Image,
   Text,
   Stack,
-  VStack,
-  Flex,
   Card,
-  Icon,
   useColorMode,
   CardBody,
   Heading,
@@ -23,7 +20,7 @@ interface ProjetoProps {
 }
 
 export function Projeto(prop: ProjetoProps) {
-  const { toggleColorMode, colorMode } = useColorMode();
+  const { colorMode } = useColorMode();
 
   const imagem = require(`../../assets/img/projetos/${prop.Imagen}`);
 

@@ -7,7 +7,7 @@ interface QualificacaoProps {
 }
 
 export function Qualificacao(prop: QualificacaoProps) {
-  const { toggleColorMode, colorMode } = useColorMode();
+  const { colorMode } = useColorMode();
   return (
     <Card
       w={{ base: "100%", sm: "300px" }}

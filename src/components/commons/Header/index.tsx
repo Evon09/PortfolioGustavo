@@ -1,4 +1,7 @@
 import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
   Flex,
   Heading,
   Image,
@@ -8,9 +11,10 @@ import {
 } from "@chakra-ui/react";
 import { ColorModeSwitcher } from "../../../ColorModeSwitcher";
 import { Link } from "react-router-dom";
+import { ChevronRightIcon } from "@chakra-ui/icons";
 
 export function Header() {
-  const { toggleColorMode, colorMode } = useColorMode();
+  const { colorMode } = useColorMode();
 
   return (
     <Flex
@@ -36,7 +40,41 @@ export function Header() {
           </Flex>
         </Flex>
       </Link>
+      <Spacer />
+      <Flex>
+        <Breadcrumb
+          spacing="8px"
+          separator={<ChevronRightIcon color="gray.500" />}
+        >
+          <BreadcrumbItem>
+            <BreadcrumbLink href="#home">Home</BreadcrumbLink>
+          </BreadcrumbItem>
 
+          <BreadcrumbItem>
+            <BreadcrumbLink href="#about">About</BreadcrumbLink>
+          </BreadcrumbItem>
+
+          <BreadcrumbItem>
+            <BreadcrumbLink href="#exp">Expreriencias</BreadcrumbLink>
+          </BreadcrumbItem>
+
+          <BreadcrumbItem>
+            <BreadcrumbLink href="#quali">Qualificações</BreadcrumbLink>
+          </BreadcrumbItem>
+
+          <BreadcrumbItem>
+            <BreadcrumbLink href="#proj">Projetos</BreadcrumbLink>
+          </BreadcrumbItem>
+
+          <BreadcrumbItem>
+            <BreadcrumbLink href="#gale">Galeria</BreadcrumbLink>
+          </BreadcrumbItem>
+
+          <BreadcrumbItem>
+            <BreadcrumbLink href="#cont">Contato</BreadcrumbLink>
+          </BreadcrumbItem>
+        </Breadcrumb>
+      </Flex>
       <Spacer />
       <ColorModeSwitcher justifySelf="flex-end" />
     </Flex>

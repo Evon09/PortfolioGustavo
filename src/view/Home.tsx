@@ -3,7 +3,6 @@ import { Header } from "../components/commons/Header";
 
 import { CardHome } from "../components/card/cardHome";
 import { CardAbout } from "../components/card/cardAbout";
-import { Qualificacao } from "../components/card/qualificacao";
 import { Qualificacoes } from "../components/card/qualificacoes";
 import Gallery from "../components/Gallery";
 import { Experiencias } from "../components/card/experiencias";
@@ -12,7 +11,7 @@ import { Contato } from "../components/card/contato";
 import { Projetos } from "../components/card/projetos";
 
 export default function Home() {
-  const { toggleColorMode, colorMode } = useColorMode();
+  const { colorMode } = useColorMode();
   return (
     <>
       <VStack

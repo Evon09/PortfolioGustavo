@@ -1,6 +1,5 @@
-import { Center, Flex, Icon, Text } from "@chakra-ui/react";
+import { Center, Flex, Text } from "@chakra-ui/react";
 import { Header } from "../components/commons/Header";
-import { FaSearch } from "react-icons/fa";
 import Footer from "../components/commons/footer";
 
 export default function NotFound() {

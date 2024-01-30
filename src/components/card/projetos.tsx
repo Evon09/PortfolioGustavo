@@ -1,27 +1,14 @@
-import {
-  Image,
-  Text,
-  Stack,
-  VStack,
-  Flex,
-  Card,
-  Icon,
-  useColorMode,
-  CardBody,
-  Heading,
-  CardFooter,
-  Button,
-} from "@chakra-ui/react";
-import { Qualificacao } from "./qualificacao";
+import { Text, Flex, useColorMode } from "@chakra-ui/react";
 import { Projeto } from "./projeto";
 
 import string from "../../assets/json/projetos.json";
 
 export function Projetos() {
-  const { toggleColorMode, colorMode } = useColorMode();
+  const { colorMode } = useColorMode();
   const projetosKeys = Object.keys(string.Projetos);
   return (
     <Flex
+      id="proj"
       w="100%"
       minH="80vh"
       bg={colorMode === "light" ? "light.background" : "dark.background"}

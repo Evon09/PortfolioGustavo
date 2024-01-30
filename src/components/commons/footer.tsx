@@ -1,16 +1,19 @@
-import { Flex, Text } from "@chakra-ui/react";
+import { Flex, Text, useColorMode } from "@chakra-ui/react";
 
 export default function Footer() {
+  const { colorMode } = useColorMode();
   return (
     <Flex
       align="center"
-      bg="gray"
+      bg={colorMode === "light" ? "light.secondary" : "dark.secondary"}
       w="100%"
       h="50px"
       justify="center"
       bottom="0"
     >
-      <Text>Site feito por Jair.js</Text>
+      <Text>
+        Site feito por <a href="https://github.com/Evon09">Jair.js </a>
+      </Text>
     </Flex>
   );
 }

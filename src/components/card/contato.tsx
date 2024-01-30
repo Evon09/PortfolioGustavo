@@ -1,14 +1,7 @@
 import {
   VStack,
-  Heading,
   Flex,
-  Input,
-  Button,
   useColorMode,
-  FormControl,
-  FormLabel,
-  FormHelperText,
-  Textarea,
   Stack,
   List,
   ListItem,
@@ -17,7 +10,6 @@ import {
 } from "@chakra-ui/react";
 import {
   PhoneIcon,
-  AddIcon,
   EmailIcon,
   SearchIcon,
   AttachmentIcon,
@@ -30,6 +22,7 @@ export function Contato() {
 
   return (
     <VStack
+      id="cont"
       w="100%"
       px="10vw"
       py={{ base: "10px", sm: "30px" }}
